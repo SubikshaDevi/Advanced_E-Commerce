@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVANCED E-COMMERCE | About Us</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <nav class="nav nav_top">
+        <div class="logo">
+            <a href="index.html"><img src="image/logo.png" width="150"></a>
+        </div>
+        <div class="nav_side">
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login/Register</a>
+        </div>
+    </nav>
+        <div class="about_us">
+            <h2>About Us</h2>
+            <div class="about_content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat, turpis vitae posuere rutrum, ipsum ipsum tincidunt odio, sit amet imperdiet ante orci at purus. 
+                    Praesent quis neque in arcu convallis malesuada vitae sed risus. Morbi ullamcorper velit non ornare ullamcorper. 
+                    Donec nec convallis justo, id dapibus arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat, turpis vitae posuere rutrum, ipsum ipsum tincidunt odio, sit amet imperdiet ante orci at purus. 
+                    Praesent quis neque in arcu convallis malesuada vitae sed risus. Morbi ullamcorper velit non ornare ullamcorper. 
+                    Donec nec convallis justo, id dapibus arcu.</p>
+            </div>
+        <hr>
+            <h2>Our Mission</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat, turpis vitae posuere rutrum, ipsum ipsum tincidunt odio, sit amet imperdiet ante orci at purus. 
+                Praesent quis neque in arcu convallis malesuada vitae sed risus. Morbi ullamcorper velit non ornare ullamcorper. 
+                Donec nec convallis justo, id dapibus arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat, turpis vitae posuere rutrum, ipsum ipsum tincidunt odio, sit amet imperdiet ante orci at purus. 
+                Praesent quis neque in arcu convallis malesuada vitae sed risus. Morbi ullamcorper velit non ornare ullamcorper. 
+                Donec nec convallis justo, id dapibus arcu.</p>
+        </div>
+    
+    <div class="form">
+        <h2>Write a Review</h2>
+        <div class="feed_form">
+            <form name="googlesheet" method="post">
+                <input type="text" name="Name" placeholder="Name"><br>
+                <input type="email" name="Email" placeholder="Email Id"><br>
+                <input type="number" name="Number" placeholder="Contact Number"><br>
+                <textarea  name="Review" id="" cols="30" rows="10" placeholder="Write your Review"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="f_logo">
+            <a href="index.html"><img src="image/logo.png" width="150"></a>
+        </div>
+        <div class="pages">
+            <h3>Pages</h3>
+            <a href="about.html">About Us</a>|
+            <a href="services.html">Services</a>|
+            <a href="blogs.html">Blog</a>|
+            <a href="login.html">Login</a>|
+            <a href="registration.html">Sign Up</a>
+        </div>
+        <div class="doc">
+            <h3>Documents</h3>
+            <a href="">Privacy Policy</a>|
+            <a href="">Terms Of Use</a>|
+            <a href="">Refund Policy</a>
+        </div>
+        <div class="social">
+            <h3>Follow Us</h3>
+            <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-telegram" aria-hidden="true"></i></a>
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <a href="tel +919851236450"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            <a href="https://api.WhatsApp.com/send?phone=+919851236450"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="mailto: support@Seasyme.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
+        <hr>
+        <p>Copyright &copy; 2021 Seasyme. All rigths reserved</p>
+    </footer>
+
+<script type="text/javascript">
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbye_i5cpT4HFGOTNcbTYPJvCW6fgV43KCR0nPlNmDVrTA-O-Mf4ESsBOxpXiTlFDVjndQ/exec'
+            const form = document.forms['googlesheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..!"))
+                .catch(error => console.error('Error!', error.message))
+            })
+          
+</script>
+</body>
+</html>
